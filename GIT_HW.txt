@@ -1,0 +1,52 @@
+1. На локальном репозитории сделать ветки для: git branch
+- Postman
+- Jmeter
+- CheckLists
+- Bug Reports
+- SQL
+- Charles
+- Mobile testing
+
+2. Запушить все ветки на внешний репозиторий git push --all
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта 
+git checkout BugReports
+touch BugRport.txt
+cat > BugReport
+4. Запушить структуру багрепорта на внешний репозиторий
+gid add bugReport.txt
+git commit -m "BugReport"
+git push --set-upstream origin BugReports
+
+5. Вмержить ветку Bag Reports в Main 
+git checkout main
+git merge BugReports
+6. Запушить main на внешний репозиторий.
+git push origin main
+7. В ветке CheckLists набросать структуру чек листа
+git checkout CheckLists
+touch checklist.txt
+cat > checklist.txt
+1)проверить открытие и доступность сайта
+2)проверить открытие и доступность сайта повторно после его закрытия
+3)проконтролировать, чтобы работали все пункты в меню
+4)проконтролировать, чтобы нажимались кнопки на сайте
+5)проверить, чтобы открывались все ссылки
+6)посмотреть, чтобы не было битых ссылок
+7)заполнить и проверить все формы на сайте
+8)проверить работоспособность основных элементов сайта 
+
+
+1)Открыть страницу авторизации
+2)Ввести логин и пароль
+3)Нажать кнопку "Войти"
+4)Проверить, что пользователь был успешно авторизован
+5)Проверить, что отображается правильная информация о пользователе (имя, фото профиля).
+
+8. Запушить структуру на внешний репозиторий
+git add checklist.txt
+git commit -m "check"
+git push --set-ustream origin ChekLists
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main
+git pull
